@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './ColorPicker.css';
 
 export const ColorPicker = ({ options }) => {
+  console.log(options);
   const [activeOptionIdx, setActiveOptionIdx] = useState(0);
 
   const makeOptionClassName = index => {
